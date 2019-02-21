@@ -52,8 +52,24 @@ console.log("Working with strings:");
   let greeting = "My name is" + " " + name;
   console.log(greeting);
 
+console.log('We are building functions.');
+//function to make square numbers
+
+  function makeSquare(theNumb) {
+    let squared = theNumb * theNumb;
+    return squared;
+  }
+
+  console.log(makeSquare(3));
+  console.log(makeSquare(50));
 
 
+  function myName(firstName, middleName, lastName) {
+    let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+  }
+
+    console.log(myName('Brianna', 'Kaye', 'Casselman'));
     </script>
 </body>
 </html>
