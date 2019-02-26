@@ -75,6 +75,37 @@ console.log('We are building functions.');
 let returnedName = myName('Brian', 'Lee', "Casselman");
 console.log(returnedName.length);
 console.log(returnedName.toUpperCase());
+
+console.log('Making a better name funciton:');
+
+function makeBetterName(firstName, middleName, lastName) {
+  if (middleName.length === 1) {
+    middleName = middleName + '.';
+    let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName
+} else {
+  let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+  }
+}
+
+console.log(makeBetterName("Joan", "Marie", "Larkin"));
+console.log(makeBetterName("Donald", "F", "Trump"));
+
+
+function makeScore(homeScore, awayScore) {
+  if (homeScore > awayScore) {
+    return ('The home team won');
+  } else if (homeScore < awayScore) {
+    return ('The away team won');
+  } else {
+    return ('It was a tie');
+  }
+}
+
+console.log(makeScore(8, 7))
+console.log(makeScore(8, 12))
+console.log(makeScore(9, 9))
     </script>
 </body>
 </html>
